@@ -1,0 +1,18 @@
+{
+   "manifest_version": 2,
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [ "css/kwtr.css" ],
+      "js": [ "js/jquery.js", "js/underscore.js", "js/kwtrContentScript.js" ],
+      "matches": [ "http://twitter.com/*", "https://twitter.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Lägger till Twittercensus till din twitter.com timeline.",
+   "icons": {
+      "128": "icons/logo-128.png",
+      "48": "icons/logo-48.png"
+   },
+   "name": "ChromeCensus",
+   "permissions": [ "http://twittercensus.se/" ],
+   "version": "0.1"
+}
